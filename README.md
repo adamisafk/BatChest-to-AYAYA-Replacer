@@ -32,8 +32,8 @@
 Assuming Tampermonkey is used, you can either:
 
 1. Click on userscript file in GitHub and click "Raw". [Or click here.](https://github.com/adamisafk/BatChest-to-AYAYA-Replacer/raw/main/BatChest%20to%20AYAYA.user.js)
-2. [Open the gist.](https://gist.github.com/adamisafk/c880514b088b16d8fcee61e7cbf22391)
-3. Use Tampermonkey interface to import gist, or copy the script contents and paste it in new script creation.
+2. [Install on GreasyFork](https://greasyfork.org/en/scripts/436300-replace-batchest-with-ayaya)
+3. Use Tampermonkey interface to import [gist](https://gist.github.com/adamisafk/c880514b088b16d8fcee61e7cbf22391), or copy the script contents and paste it in new script creation.
 
 ## 🔧 Configuration <a name = "configuration"></a>
 
