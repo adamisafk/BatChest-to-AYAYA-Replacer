@@ -22,14 +22,6 @@
     <b>NOTE: 7TV BREAKS THE SCRIPT (UNSURE OF CAUSE OR SOLUTION YET)</b>
 </p>
 
-## 📝 Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [TODO](#todo)
-- [Acknowledgments](#acknowledgements)
-
 ## 🧰 Prerequisites <a name = "prerequisites"></a>
 
 - A browser with extension support and capable of handling userscripts
@@ -37,11 +29,27 @@
 
 ## 🎈 Usage <a name = "usage"></a>
 
-Assuming Tampermonkey is used...
+Assuming Tampermonkey is used, you can either:
+
+1. Click on userscript file in GitHub and click "Raw". [Or click here.](https://github.com/adamisafk/BatChest-to-AYAYA-Replacer/raw/main/Larger%20Twitch%20Emotes.user.js)
+2. [Open the gist.](https://gist.github.com/adamisafk/c880514b088b16d8fcee61e7cbf22391)
+3. Use Tampermonkey interface to import gist, or copy the script contents and paste it in new script creation.
 
 ## 🔧 Configuration <a name = "configuration"></a>
 
 You can customise the emote that will get replaced, and the emote which will be used as a replacement. The default is 'BatChest' to 'AYAYA'.
+
+First, you must find the CDN links to the emotes you want to use.
+- Can find this by Right Clicking -> Inspect Element on an emote. Copy the URL in `src` attribute in the `img` element.
+
+[On lines 26-27](https://github.com/adamisafk/BatChest-to-AYAYA-Replacer/blob/main/Larger%20Twitch%20Emotes.user.js#L26-L27), set the `ayayaSrc` to the emote URL used to replace - remove the size number (e.g. /1) <b>but keep the end `/`</b>. And set `batChest` to name of emote to be replaced (case sensitive).
+
+```
+var ayayaSrc = "https://cdn.betterttv.net/frankerfacez_emote/162146/";
+var batChest = "BatChest";
+```
+
+
 
 ## 📝 TODO <a name = "todo"></a>
 

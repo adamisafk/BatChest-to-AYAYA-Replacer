@@ -24,7 +24,7 @@
 
     var scriptName = 'Replace BatChest with AYAYA';
     var ayayaSrc = "https://cdn.betterttv.net/frankerfacez_emote/162146/";
-    var batChestSrc = "https://static-cdn.jtvnw.net/emoticons/v2/115234/default/dark/"
+    var batChest = "BatChest";
 
     console.log(`[${scriptName}] Loaded.`);
     onReady(document, function(event) {
@@ -58,13 +58,13 @@
             for (var mutation of mutationsList) {
                 mutation.addedNodes.forEach((node) => {
                     if (node.classList && node.classList.contains('chat-line__message--emote')) {
-                        if(node.getAttribute("alt") == "BatChest") {
+                        if(node.getAttribute("alt") == batChest) {
                            runReplace(node);
                         }
                     }
                     var emotes = node.querySelectorAll('.chat-line__message--emote');
                     emotes.forEach((emote) => {
-                        if(emote.getAttribute("alt") == "BatChest") {
+                        if(emote.getAttribute("alt") == batChest) {
                             runReplace(emote);
                         }
                     });
