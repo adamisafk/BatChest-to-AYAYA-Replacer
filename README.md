@@ -31,7 +31,7 @@
 
 Assuming Tampermonkey is used, you can either:
 
-1. Click on userscript file in GitHub and click "Raw". [Or click here.](https://github.com/adamisafk/BatChest-to-AYAYA-Replacer/raw/main/Larger%20Twitch%20Emotes.user.js)
+1. Click on userscript file in GitHub and click "Raw". [Or click here.](https://github.com/adamisafk/BatChest-to-AYAYA-Replacer/raw/main/BatChest%20to%20AYAYA.user.js)
 2. [Open the gist.](https://gist.github.com/adamisafk/c880514b088b16d8fcee61e7cbf22391)
 3. Use Tampermonkey interface to import gist, or copy the script contents and paste it in new script creation.
 
